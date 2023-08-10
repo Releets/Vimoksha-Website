@@ -1,0 +1,24 @@
+.main{
+    padding-top: 2em;
+    background-color: #E5F4D3;
+    height: 1800px;
+    width: 100%;
+    color: #2F1728;
+    background-image: linear-gradient(#E5F4D3, #161618);
+}
+.vineline{
+    background-image: url('../Media/vineline3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 80%;
+    height: 200px;
+}
+.header{
+    padding-top: 5em;
+    background-color: #E5F4D3;
+    width: 100%;
+    font-family: 'Lucida Bright';
+    font-size: 300%;
+    color: #2F1728;
+}
