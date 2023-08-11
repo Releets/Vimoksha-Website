@@ -1,12 +1,13 @@
 
 
 export default function Homebody(){
-    return <div>
+    return <div style={{height: '100%'}}>
         <div className='vineline'></div>
-        <div className="header">BODY OF THE PAGE</div>
+        <div className="header"></div>
         <div className='main'>
             <br></br> 
             <h3>text text</h3>
+            
         </div>
     </div>
 }

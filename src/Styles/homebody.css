@@ -11,8 +11,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
-    width: 80%;
-    height: 200px;
+    max-width: 100%;
+    height: 300px;
 }
 .header{
     padding-top: 5em;

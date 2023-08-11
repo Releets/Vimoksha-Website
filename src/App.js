@@ -28,17 +28,19 @@ import bannerimg1 from './Media/emina-gray1.jpg'
 import bannerimg2 from './Media/emina-veil1.jpg'
 
 
-
 function App() {
-
   const ref = useRef();
   document.title = '~ V I M O K S H A ~';
+
+  const scrollToRef = (loc) => {
+      ref.current.scrollTo(loc);
+  }
 
   return (
     <div className="App">
       <Parallax pages={7.3} ref={ref}>
         <ParallaxLayer offset={0} factor={1} speed={0.5}>
-          <Navbar/>
+          <Navbar scrollFunc={scrollToRef}/>
           <Banner/>
           <br></br><br></br>
           <HeaderInfoBox/>
@@ -82,5 +84,7 @@ function App() {
 }
 // Social media links in footer?
 // Credit to imgs etc in footer
+// <a href="https://www.vecteezy.com/free-png/rose">Rose PNGs by Vecteezy</a>
+// <a href="https://www.freepnglogos.com/pics/flower-watercolor">Flower Watercolor from freepnglogos.com</a>
 
 export default App;

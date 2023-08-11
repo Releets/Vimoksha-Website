@@ -1,9 +1,85 @@
-.contactpage{
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+.contactpage{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+.vineline-bottom{
+    background-image: url('../Media/flower-banner3.png');
+    transform: scaleY(-1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 120%;
+    height: 500px;
+    position: absolute;
 }
 .contact-img{
 
 }
 .contact-box{
+    font-family: 'Merriwarther', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    padding: 2em;
+    background-color: rgb(242, 242, 242);
+    max-width: 100%;
+    width: 25vw;
     
 }
+.contact-header{
+    font-family: 'Indie Flower', cursive;
+    font-size: 48px;
+}
+
+.mailform{
+    max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+}
+input, textarea{
+    border:0; outline:0;
+     padding: 1em;
+     border-radius: 8px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     box-shadow: 0 1px 1px rgba(black, 0.1);
+     resize: none;
+}
+
+#input-submit {
+    color: white; 
+    background: rgb(173, 173, 173);
+    cursor: pointer;
+    width: fit-content;
+ }
+ #input-submit:hover{
+     box-shadow:0 1px 1px 1px rgba(#aaa, 0.6);   
+ }
+ 
+ textarea {
+     height: 126px;
+ }
+ 
+ .half {
+    float: left;
+    width: 40%;
+    margin-bottom: 1em;
+  }
+  
+  .right { width: 45%; }
+  
+  .left {
+       margin-right: 10%; 
+  }

@@ -20,6 +20,7 @@ export default function PortfolioPage(){
         "something else" : "eee",
     }
     return <div className="portfoliopage">
+            <div className="fade-2"></div>
             <h1>PORTFOLIO</h1>
             <h3><i>some of my performances include...</i></h3>
             <div className="cardcontainer">

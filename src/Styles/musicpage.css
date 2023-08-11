@@ -1,3 +1,7 @@
+* {
+    font-family: Lato, sans-serif;
+}
+
 .fade{
     background-image: linear-gradient(rgba(255,0,0,0), rgba(22,22,24,1));
     width: 100%;
@@ -12,6 +16,7 @@
 }
 .music-header{
     font-family: 'Lucida Sans Typewriter';
+    letter-spacing: .5rem;
 }
 .music-wrapper{
     display: flex;
@@ -19,20 +24,27 @@
     justify-content: center;
 }
 .albumimg{
-    background-image: url('../Icons/mirrorball-edited.gif');
+    /*background-image: url('../Icons/mirrorball-edited.gif');
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 30%;
-    height: 37em;
-    border: 10px solid gray;
-    margin-right: 10em;
+    background-repeat: no-repeat;*/
+    font-size: 1em;
+	line-height: 1.5em;
+	font-weight: 200;
+	padding: 0 4vw 4vw;
+	border-right: 2px;
+	border-left: 0;
+	border-style: solid;
+/* 	border-image: linear-gradient(to bottom, #ccc, #555 66%, #181818) 1 100%; */
+	border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%;
+    width: 50%;
 }
 .music-textbox{
-    border: 10px solid gray;
+    font-weight: 200;
+    font-family: Lato, sans-serif;
+    padding: 0 4vw 4vw;
     width: 50%;
-    height: 600px;
-    text-align: center;
-    font-size: 200%;
+    height: 473px;
+    font-size: 150%;
 }
 .music-header{
     font-size: 400%;

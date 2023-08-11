@@ -1,14 +1,20 @@
 import {useEffect, useState} from 'react';
 
-export default function Navbar(){
+export default function Navbar(props){
     const categories =["HOME", "ABOUT", "MUSIC", "PORTFOLIO", "CONTACT"]
     const socials = {
         "INSTAGRAM": "https://www.instagram.com/vimoksha_/",
         "YOUTUBE" : "https://www.youtube.com/c/Vimoksha", 
         "PATREON" : "https://www.patreon.com/Vimoksha"
     }
+
+    const offsetList = [0, 1.6, 3.5, 5, 6];
     
     const [navbarPosition, setNavbarPosition] = useState('static');
+
+    function handleClick(loc) {
+      props.scrollFunc(loc)
+    }
 
     // Use an effect to update the navbar position based on the scroll position
     useEffect(() => {
@@ -30,8 +36,8 @@ export default function Navbar(){
     return <div className={`navbar ${navbarPosition}`}>
             <div className="navbar-lefthalf">
                 <div className="navbar-wrapper">
-                    {categories.map(name =>
-                        <div className="navbar-item">
+                    {categories.map((name, index) =>
+                        <div className="navbar-item" onClick={() => handleClick(offsetList[index])}>
                             {name}
                         </div>
                     )}
