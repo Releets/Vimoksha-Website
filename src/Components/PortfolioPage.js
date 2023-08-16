@@ -14,7 +14,7 @@ export default function PortfolioPage(){
       } 
     
     const items = {
-        "Studensko Ljeto Winner" : "blablablablalbalba",
+        "Studensko Ljeto Winner" : "In the 2022 annual Singing Competiton \"Studensko Ljeto\"\, which gathers youth from all across Europe to sing both modern and traditional folk music, I placed first with the song STOP by Sam Brown.",
         "Finalist in Supertalent 2019" : "bsklbmfksldbmsklfbmlskbmkfsbfm",
         "Great Gatsby Galla 2022" : "SWITZERLAND I SING GATSBY YES djsnfnjfkdsnfdsjfnksdkjfndskfnjsknj",
         "something else" : "eee",

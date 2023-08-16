@@ -2,7 +2,7 @@
     padding: 2rem 4rem;
     display: inline-block;
     border: 3px solid #FFCDBA;
-    font-size: 1vw;
+    font-size: clamp(0.8em, 1em, 2vw);
     border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
     letter-spacing: 0.3ch;
     background: #ffffff;
