@@ -9,7 +9,7 @@ export default function Navbar(props){
         "FIVERR" : "https://www.fiverr.com/s/Wmv27R"
     }
 
-    const offsetList = [0, 1.3, 3.5, 5, 6];
+    const offsetList = [0, 1.25, 3.5, 5, 6];
     
     const [navbarPosition, setNavbarPosition] = useState('static');
 

@@ -15,9 +15,13 @@ import {Parallax, ParallaxLayer} from '@react-spring/parallax'
 import './Styles/App.css';
 import './Styles/banner.css'
 import './Styles/navbar.css'
-import './Styles/homebody.css'
-import './Styles/largebannerimage.css'
 import './Styles/headerinfobox.css'
+
+import './Styles/homebody.css'
+import './Styles/carousel.css'
+import './Styles/largebannerimage.css'
+import './Styles/songlist.css'
+
 import './Styles/musicpage.css'
 
 import './Styles/portfoliopage.css'
@@ -41,7 +45,7 @@ function App() {
   return (
     <div className="App">
       <Parallax pages={8} ref={ref}>
-        <ParallaxLayer offset={0} factor={1} speed={0.5}>
+        <ParallaxLayer offset={0} factor={1} speed={-0.3}>
           <Navbar scrollFunc={scrollToRef}/>
           <Banner/>
           <HeaderInfoBox/>
@@ -52,7 +56,7 @@ function App() {
         <ParallaxLayer offset={2} speed={1} factor={3}>
           <LargeBannerImage image={bannerimg2}/>
         </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={-0.2}>
+        <ParallaxLayer offset={3.3} speed={-0.2}>
           <MusicPage/>
         </ParallaxLayer>
         <ParallaxLayer offset={5}

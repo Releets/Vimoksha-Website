@@ -1,7 +1,7 @@
 .bannerimg-container{
     
 }
-
 .pic{
-    height: auto;
+    height: 300vw;
+    min-height: 1400px;
 }
