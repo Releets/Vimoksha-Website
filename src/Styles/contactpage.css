@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+
 .contactpage{
-    margin-top: 5em;
+    width: 100%;
+    height: 100%;
+    padding: 3vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
+    align-items: center;  
+    background-color: rgb(156, 128, 105);
 }
 .vineline-bottom{
     background-image: url('../Media/flower-banner3.png');
@@ -33,12 +31,13 @@
     padding: 2em;
     background-color: rgb(242, 242, 242);
     max-width: 100%;
+    height: auto;
     width: 25vw;
     
 }
 .contact-header{
     font-family: 'Indie Flower', cursive;
-    font-size: 48px;
+    font-size: 220%;
 }
 
 .mailform{
@@ -83,3 +82,16 @@ input, textarea{
   .left {
        margin-right: 10%; 
   }
+
+.fiver-logo{
+    width: 2vw;
+    height: 2vw;
+    float: right;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    cursor: pointer;
+}

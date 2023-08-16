@@ -10,7 +10,7 @@ export default function PortfolioPage(){
     function handleCardClick(id){
         console.log("CLICK"+id)
         setCurrentItem("0")
-        setShowGallery(true)
+        setShowGallery(!showGallery)
       } 
     
     const items = {

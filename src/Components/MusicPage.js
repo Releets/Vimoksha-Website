@@ -14,7 +14,6 @@ export default function MusicPage(){
                         className="albumimg"
                         allowfullscreen>
                 </iframe>
-                
                 <div className="music-textbox">
                     <h3>My newest single <i><u>Ništa</u></i><br></br> </h3>
                     A fun, catchy burst of energy to get your body moving on a night out. Check out the music video or stream it on Spotify!

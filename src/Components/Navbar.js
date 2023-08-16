@@ -5,10 +5,11 @@ export default function Navbar(props){
     const socials = {
         "INSTAGRAM": "https://www.instagram.com/vimoksha_/",
         "YOUTUBE" : "https://www.youtube.com/c/Vimoksha", 
-        "PATREON" : "https://www.patreon.com/Vimoksha"
+        "PATREON" : "https://www.patreon.com/Vimoksha",
+        "FIVERR" : "https://www.fiverr.com/s/Wmv27R"
     }
 
-    const offsetList = [0, 1.6, 3.5, 5, 6];
+    const offsetList = [0, 1.3, 3.5, 5, 6];
     
     const [navbarPosition, setNavbarPosition] = useState('static');
 
@@ -37,7 +38,7 @@ export default function Navbar(props){
             <div className="navbar-lefthalf">
                 <div className="navbar-wrapper">
                     {categories.map((name, index) =>
-                        <div className="navbar-item" onClick={() => handleClick(offsetList[index])}>
+                        <div key={index} className="navbar-item" onClick={() => handleClick(offsetList[index])}>
                             {name}
                         </div>
                     )}
@@ -46,7 +47,7 @@ export default function Navbar(props){
             <div className="navbar-righthalf">
                 <div className="navbar-wrapper">
                     {Object.entries(socials).map(([key, val]) =>
-                            <a className="navbar-item" href={val}>{key}</a>
+                            <a key={key} className="navbar-item" target="_blank" href={val}>{key}</a>
                         )}
                 </div>
             </div>

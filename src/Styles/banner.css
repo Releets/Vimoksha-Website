@@ -1,9 +1,9 @@
-.banner{
+    .banner{
     background-image: url('../Media/flower-banner1.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 600px;
-    height: 300px;
+    width: 35rem;
+    height: 17rem;
 
     color: #2F1728;
     font-family: 'Bodoni MT', 'Calisto MT';

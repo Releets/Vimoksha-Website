@@ -4,21 +4,62 @@
     height: 1800px;
     width: 100%;
     color: #2F1728;
-    background-image: linear-gradient(#E5F4D3, #161618);
+    /*background-image: linear-gradient(#E5F4D3, #161618);
+    */display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 .vineline{
-    background-image: url('../Media/vineline3.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
+    margin: 0;
     max-width: 100%;
-    height: 300px;
+    
+}
+.flowerimage{
+    width: 100%;
+    height: 100%;
+    margin-bottom: -4px;
 }
 .header{
-    padding-top: 5em;
+    padding-top: 2em;
     background-color: #E5F4D3;
     width: 100%;
     font-family: 'Lucida Bright';
-    font-size: 300%;
-    color: #2F1728;
+    font-size: 400%;
+    color: white;
 }
+.box{
+    background-color: #d9e7c8;
+    transition: all .4s ease;
+    width: 25%;
+    height: 20%;
+    margin: 2vw;
+    padding: 2vw;
+    box-shadow: 15px 15px rgba(0,0,0,.20);
+
+}
+
+.about-right{
+    opacity: 0;
+    box-shadow: none;
+}
+.about-right:hover{
+    opacity: 1;
+    box-shadow: 15px 15px rgba(0,0,0,.20);
+
+}
+.about-center{
+    font-size: 90%;
+    font-family: Lato, sans-serif;;
+    color: white;
+}
+.about-left{
+    opacity: 0;
+    box-shadow: none;
+}
+.about-left:hover{
+    opacity: 1;
+    box-shadow: 15px 15px rgba(0,0,0,.20);
+
+}
+
+
