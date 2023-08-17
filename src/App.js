@@ -26,7 +26,6 @@ import './Styles/musicpage.css'
 
 import './Styles/portfoliopage.css'
 import './Styles/portfoliocard.css'
-import './Styles/eventgallery.css'
 
 import './Styles/contactpage.css'
 

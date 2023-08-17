@@ -8,11 +8,12 @@ Pale Turquoise #B8E0F6
 */
 
 .card{
+    position: relative;
     opacity: 1;
     z-index: 2;
     width: 20vw;
     height: 25vw;
-    transition: 0.4s ease-out;
+    transition: width 0.4s ease-out, opacity 0.2s ease-in;
     background-color: #C2E6C2;
     color: #fff;
     box-sizing: border-box;
@@ -27,6 +28,12 @@ Pale Turquoise #B8E0F6
     transform: scale(1.05);
     transition: 0.5s;
     height: 26vw;
+    cursor: pointer;
+}
+.card-xicon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
     cursor: pointer;
 }
 .card-title{
@@ -44,7 +51,11 @@ Pale Turquoise #B8E0F6
     color: white;
 }
 .card-expanded{
-    width: 90vw;
+    width: 40vw;
+    position: absolute;
+}
+.card-expanded:hover{
+    cursor: default;
 }
 .card-hidden{
     opacity: 0;

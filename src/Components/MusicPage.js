@@ -12,7 +12,7 @@ export default function MusicPage(){
                         frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         className="albumimg"
-                        allowfullscreen>
+                        allowFullScreen>
                 </iframe>
                 <div className="music-textbox">
                     <h3>My newest single <i><u>Ništa</u></i><br></br> </h3>
@@ -24,7 +24,7 @@ export default function MusicPage(){
                     width="60%" 
                     height="152" 
                     frameBorder="0" 
-                    allowfullscreen="" 
+                    allowFullScreen="" 
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                     loading="lazy">
                     </iframe>
