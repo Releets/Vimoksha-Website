@@ -30,8 +30,9 @@ import './Styles/eventgallery.css'
 
 import './Styles/contactpage.css'
 
-import bannerimg1 from './Media/emina-gray1.jpg'
-import bannerimg2 from './Media/emina-veil1.jpg'
+//import bannerimg1 from './Media/Photoshoots/emina-gray1.jpg'
+import bannerimg2 from './Media/Photoshoots/emina-veil1.jpg'
+import transitionimg1 from './Media/Flowers/flowers-transition.png'
 
 
 function App() {
@@ -59,16 +60,18 @@ function App() {
         <ParallaxLayer offset={3.3} speed={-0.2}>
           <MusicPage/>
         </ParallaxLayer>
-        <ParallaxLayer offset={5}
-        style={{
-          backgroundColor: '#662c2c'
-        }}>
+        <ParallaxLayer offset={5} factor={1.5}>
           <PortfolioPage/>
         </ParallaxLayer>
-        <ParallaxLayer offset={6}>
+        <ParallaxLayer offset={4.3} speed={1.5} factor={1}>
+            <div className='transition-container'>
+              <img src={transitionimg1} className='transitionimg'></img>
+            </div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={6.5}>
           <ContactPage/>
         </ParallaxLayer>
-        <ParallaxLayer offset={7} factor={1}>
+        <ParallaxLayer offset={7.5} factor={0.2}>
           <Footer/>
         </ParallaxLayer>
       </Parallax>

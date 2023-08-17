@@ -1,17 +1,19 @@
-.container{
-	height: 100%;
-	background-color: #111;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-}
+/*
+PALLETE
+Pale Turquoise #B8E0F6
+‍Light Blue #A4CCE3
+‍Dark Slate Blue #37667E
+‍Light Steel Pink #DEC4D6
+‍Light Slate Grey #7B92AA
+*/
+
 .card{
+    opacity: 1;
+    z-index: 2;
     width: 20vw;
-    height: 15vw;
+    height: 25vw;
     transition: 0.4s ease-out;
-    background-color: #28282b;
+    background-color: #C2E6C2;
     color: #fff;
     box-sizing: border-box;
     padding: 2vw;
@@ -24,21 +26,26 @@
 .card:hover{
     transform: scale(1.05);
     transition: 0.5s;
-    height: 20vw;
+    height: 26vw;
     cursor: pointer;
 }
-h2{
+.card-title{
     margin: 0;
 }
-    
 .line{
     width: 100%;
     height: 5px;
     margin-top: 10px;
 }
-p{
+.card-content{
     margin-top: 15px;
     font-size: 1vw;
     line-height: 1.6;
-    color: #cccccc;
+    color: white;
+}
+.card-expanded{
+    width: 90vw;
+}
+.card-hidden{
+    opacity: 0;
 }

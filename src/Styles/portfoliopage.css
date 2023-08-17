@@ -1,6 +1,24 @@
+/*
+PALLETE
+Pale Turquoise #B8E0F6
+‍Light Blue #A4CCE3
+‍Dark Slate Blue #37667E
+‍Light Steel Pink #DEC4D6
+‍Light Slate Grey #7B92AA
+*/
 .portfoliopage{
+    position: relative;
     color: white;
-    background-color: #662c2c;
+    height: 100%;
+    background-color: #FEDB75;
+}
+.portfolio-header{
+    font-family: "Lucida Sans Typewriter";
+    font-size: clamp(4vw, 500%, 6vw);
+}
+.portfolio-sub{
+    font-family: Lato, sans-serif;
+    font-size: 110%;
 }
 .cardcontainer{
     margin: auto;
@@ -11,7 +29,13 @@
     justify-content: center;
 }
 .fade-2{
+    z-index: 2;
     background-image: linear-gradient(rgba(22,22,24,1), rgba(255,0,0,0));
     width: 100%;
     height: 200px;
+}
+.wrap-flowers{
+    z-index: 0;
+    position: absolute;
+    background-image: url('../Media/Flowers/flowers-fullborder.png');
 }

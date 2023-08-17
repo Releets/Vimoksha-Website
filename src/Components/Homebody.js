@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
-import flowers from '../Media/vineline3.png'
+import flowers from '../Media/Flowers/vineline3.png'
 
 import Carousel from './Carousel';
 import SongList from './SongList';

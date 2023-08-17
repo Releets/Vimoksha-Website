@@ -12,6 +12,22 @@ html, body{
 .banner1{
   width: 100%;
 }
+.transition-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.transitionpage{
+  background-color: #A5CDB5;
+  width: 100%;
+  height: 100%;
+}
+.transitionimg{
+  z-index: 3;
+  left: -0%;
+  width: 300%;
+  position: absolute;
+}
 .footer{
   width: 100%;
   height: 10em;

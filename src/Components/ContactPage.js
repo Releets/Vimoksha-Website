@@ -1,5 +1,5 @@
-import mainimg from '../Media/emina-guitar1.jpg'
-import fiverlogo from '../Media/fiverr.png'
+import mainimg from '../Media/Photoshoots/emina-guitar1.jpg'
+
 
 // One div with image, wone with content
 //img div slightly taller

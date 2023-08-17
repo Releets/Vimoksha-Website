@@ -9,10 +9,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;  
-    background-color: rgb(156, 128, 105);
+    background-color: #FFFAEC;
 }
 .vineline-bottom{
-    background-image: url('../Media/flower-banner3.png');
+    background-image: url('../Media/Flowers/flower-banner3.png');
     transform: scaleY(-1);
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
     text-align: left;
     font-size: 20px;
     padding: 2em;
-    background-color: rgb(242, 242, 242);
+    background-color: #F8EAE7;
     max-width: 100%;
     height: auto;
     width: 25vw;
@@ -52,7 +52,7 @@ input, textarea{
      display: block;
      width: 100%;
      margin-top: 1em;
-     font-family: 'Merriweather', sans-serif;
+     font-family: 'Merriwarther', sans-serif;
      box-shadow: 0 1px 1px rgba(black, 0.1);
      resize: none;
 }
