@@ -64,3 +64,5 @@ export default function PortfolioPage(){
 }
 
 // <a href="https://www.freepik.com/free-vector/watercolor-hard-drawn-floral-banner_11564643.htm">Image by lukasdedi</a> on Freepik
+// <a href="https://www.freepik.com/free-vector/golden-pothos-leaf-isolated-white-background_2616107.htm#query=watercolor%20vines&position=1&from_view=keyword&track=ais">Image by rawpixel.com</a> on Freepik
+//<a href="https://www.freepik.com/free-vector/beautiful-bunch-green-watercolor-leaf-set-design_28153883.htm#page=2&query=watercolor%20vines&position=24&from_view=keyword&track=ais">Image by Harryarts</a> on Freepik
