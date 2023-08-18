@@ -6,7 +6,7 @@ import { useState } from "react"
 
 export default function PortfolioPage(){
     const items = {
-        "Studensko Ljeto Winner" : ["Studenskoljeto.png","In the 2022 annual Singing Competiton \"Studensko Ljeto\"\, which gathers youth from all across Europe to sing both modern and traditional folk music, I placed first with the song STOP by Sam Brown."],
+        "Studensko Ljeto Winner" : ["studenskoljeto.jpg","In the 2022 annual Singing Competiton \"Studensko Ljeto\"\, which gathers youth from all across Europe to sing both modern and traditional folk music, I placed first with the song STOP by Sam Brown."],
         "Finalist in Supertalent 2019" : ["supertalent.png", "sample text"],
         "Great Gatsby Galla 2022" : ["gatsby.png","sample textsample textsample textsample textsample textsample textsample textsample textsample textsample textsample textsample text"],
         "something else" : ["?","eee"],
@@ -55,9 +55,8 @@ export default function PortfolioPage(){
                     isVisible={visibleCards[index]}
                     title={t} 
                     content={c[1]}
-                    picture={c[0]}
-                    path={"../Media/Portfolio/"} 
-                    bgc={"#DAEDD9"} 
+                    picture={("../Media/Portfolio/"+c[0])}
+                    bgc={"#76aa87"} 
                     expandFunction={handleCardExpand}
                     collapseFunction={handleCardCollapse}></PortfolioCard>)}
             </div>

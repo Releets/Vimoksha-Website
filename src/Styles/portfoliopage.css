@@ -21,7 +21,6 @@ Pale Turquoise #B8E0F6
     font-size: 110%;
 }
 .cardcontainer{
-    margin: auto;
     margin-top: 2vw;
     display: flex;
     flex-wrap: wrap;

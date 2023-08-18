@@ -2,7 +2,7 @@ import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 export default function PortfolioCard(props){
-
+    console.log((props.path + props.picture));
     const [isExpanded, setIsExpanded] = useState(false);
 
     const handleClick = () => {
@@ -27,10 +27,12 @@ export default function PortfolioCard(props){
 
     
     return <div className={'card' + (props.isVisible ? '' : ' card-hidden') + (isExpanded ? ' card-expanded' : '')} onClick={handleClick}>
-        <FontAwesomeIcon icon={faCircleXmark} className={"card-xicon" + (isExpanded ? '': ' card-hidden')} onClick={handleClose}/>
+        <FontAwesomeIcon icon={faCircleXmark} size='lg' className={"card-xicon" + (isExpanded ? '': ' card-hidden')} onClick={handleClose}/>
         <h2 className="card-title">{props.title}</h2>
         <div className="line" style={{backgroundColor: props.bgc}}></div>
-        <img src={props.path + props.picture} className="card-img"></img>
-        <p className="card-content">{props.content}</p>
+        <div className="card-content-wrapper">
+            <img src={props.picture} className="card-img"></img>
+            {!isExpanded ? '': <section className="card-content">{props.content}</section>}
+        </div>
     </div>
 }

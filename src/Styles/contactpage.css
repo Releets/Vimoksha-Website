@@ -4,7 +4,6 @@
 .contactpage{
     width: 100%;
     height: 100%;
-    padding: 3vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -94,4 +93,38 @@ a{
 }
 a:hover{
     cursor: pointer;
+}
+.upbutton{
+    position: absolute;
+    /*Add when you fix bg color not stretching*/
+    /*left: 0;
+    right: 0;*/
+    font-size: 4em;
+    background-color: #F8EAE7;
+    bottom: 50px;
+    box-sizing: border-box;
+	border: 5px #F8EAE7 solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+  }
+
+  .upbutton{
+    cursor: pointer;
+  }
+  @keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }

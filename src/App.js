@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-      <Parallax pages={8} ref={ref}>
+      <Parallax pages={8.1} ref={ref}>
         <ParallaxLayer offset={0} factor={1} speed={-0.3}>
           <Navbar scrollFunc={scrollToRef}/>
           <Banner/>
@@ -62,15 +62,15 @@ function App() {
         <ParallaxLayer offset={5} factor={1.5}>
           <PortfolioPage/>
         </ParallaxLayer>
-        <ParallaxLayer offset={4.3} speed={1.5} factor={1}>
+        <ParallaxLayer offset={4.6} speed={1.5} factor={1}>
             <div className='transition-container'>
               <img src={transitionimg1} className='transitionimg'></img>
             </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={6.5}>
-          <ContactPage/>
+        <ParallaxLayer offset={6.5} factor={1.5}>
+          <ContactPage returnToTopFunc={scrollToRef}/>
         </ParallaxLayer>
-        <ParallaxLayer offset={7.5} factor={0.2}>
+        <ParallaxLayer offset={8} factor={0.1}>
           <Footer/>
         </ParallaxLayer>
       </Parallax>
