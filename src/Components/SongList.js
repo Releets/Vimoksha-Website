@@ -5,6 +5,7 @@ export default function SongList(){
 
     const songs = ["Pustite Mi Mir", 
     "DILER", 
+    "Ti si Izabran",
     "Discommunication"];
 
     return <div className="songlist">

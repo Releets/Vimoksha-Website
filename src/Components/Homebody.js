@@ -63,4 +63,3 @@ export default function Homebody(){
 
 
 // <a href="https://www.freepik.com/free-vector/colorful-floral-border-with-watercolor_24177295.htm">Image by asrulaqroni</a> on Freepik
-//<a href="https://www.freepik.com/free-vector/flower-border-with-watercolor_15699402.htm">Image by asrulaqroni</a> on Freepik

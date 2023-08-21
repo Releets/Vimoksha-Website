@@ -10,7 +10,10 @@ Pale Turquoise #B8E0F6
     position: relative;
     color: white;
     height: 100%;
-    background-color: #FEDB75;
+    background-color: #000;
+    background-image: url('../Media/BGImgs/forest-bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .portfolio-header{
     font-family: "Lucida Sans Typewriter";
@@ -33,8 +36,14 @@ Pale Turquoise #B8E0F6
     width: 100%;
     height: 200px;
 }
-.wrap-flowers{
-    z-index: 0;
+.corner-leaves-1{
+    z-index: 1;
     position: absolute;
-    background-image: url('../Media/Flowers/flowers-fullborder.png');
+    width: 100vw;
+    
+    top: -15%;
+    left: -25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../Media/Flowers/vine-corner2.png');
 }

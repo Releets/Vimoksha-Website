@@ -2,7 +2,7 @@ import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 export default function PortfolioCard(props){
-    console.log((props.path + props.picture));
+
     const [isExpanded, setIsExpanded] = useState(false);
 
     const handleClick = () => {
@@ -36,3 +36,4 @@ export default function PortfolioCard(props){
         </div>
     </div>
 }
+// REDISG? https://codepen.io/that_boy_curt/pen/mdbvxoW

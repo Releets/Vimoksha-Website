@@ -10,14 +10,15 @@ export default function ContactPage(props){
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const name = event.target[0].value;
-        const email = event.target[1].value;
-        const subject = event.target[2].value;
-        const message = event.target[3].value;
 
-        const params = [name, email, subject, message];
-
-        fetch('http://localhost:3000/send', {
+        const params = {
+            name: event.target[0].value,
+            email: event.target[1].value,
+            subject: event.target[2].value,
+            messsage: event.target[3].value
+        }
+        
+        fetch('http://localhost:3000/api/contact/emailhandler.php', {
             method: "POST",
             body: JSON.stringify(params),
             headers: {
@@ -25,15 +26,16 @@ export default function ContactPage(props){
                 'Content-Type': 'application/json'
             },
             }).then(
-            (response) => (response.json())
+                (response) => (response.json())
             ).then((response)=> {
-            if (response.status === 'success') {
-            alert("Message Sent.");
-            this.resetForm()
-            } else if(response.status === 'fail') {
-            alert("Message failed to send.")
-            }
-        })
+                if (response.status === 'success') {
+                    alert("Message Sent.");
+                    this.resetForm()
+                } 
+                else if(response.status === 'fail') {
+                    alert("Message failed to send.")
+                }
+            })
     }
 
     return <div className="contactpage">
@@ -46,7 +48,7 @@ export default function ContactPage(props){
                 <h5>For commissions and jobs, the easiest way to reach me is through <a href='https://www.fiverr.com/s/91repd'><u><i>Fiverr</i></u></a><br></br>
                     For any other inquiries, bookings or questions, feel free to use the form below!
                 </h5>
-                <form className="cf" onSubmit={handleSubmit} method='POST'>
+                <form className="cf" onSubmit={handleSubmit} action='#'>
                     <div className="half left">
                         <input type="text" placeholder="Name"></input>
                         <input type="email" placeholder="Email address"></input>

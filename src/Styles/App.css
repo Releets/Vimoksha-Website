@@ -39,3 +39,8 @@ html, body{
   background-color: #C99F87;
   bottom: 0;
 }
+.credits-toggle{
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto 0 auto;
+}
