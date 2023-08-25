@@ -10,7 +10,7 @@ export default function MusicPage(){
                         src="https://www.youtube.com/embed/iuOo5YuORv0" 
                         title="YouTube video player" 
                         frameBorder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allow="web-share" 
                         className="albumimg"
                         allowFullScreen>
                 </iframe>
@@ -24,8 +24,7 @@ export default function MusicPage(){
                     width="60%" 
                     height="152" 
                     frameBorder="0" 
-                    allowFullScreen="" 
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    allowFullScreen=""
                     loading="lazy">
                     </iframe>
                 </div>

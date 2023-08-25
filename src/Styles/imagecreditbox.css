@@ -1,9 +1,13 @@
 .credits{
+    z-index: 5;
     position: absolute;
     border: 2px solid red;
-    top: 0;
-    left: 0;
+    background-color: black;
+    top: -500%;
+    left: 40%;
+    right: 40%;
 }
+
 .credit-list{
     text-align: left;
 }
@@ -15,4 +19,8 @@
     right: 10px;
     top: 10px;
     cursor: pointer;
+}
+.credit-bottom-img{
+    width: 80%;
+    margin: auto;
 }

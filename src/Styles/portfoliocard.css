@@ -57,13 +57,13 @@ Pale Turquoise #B8E0F6
     border-left: 5px solid #76aa87;
 }
 .card-img{
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    display: block;
     width: 100%;
+    height: 18rem;
+    object-fit: cover;
 }
 .card-expanded{
     width: 40vw;
-    transition: width 0.3s ease-out;
     transform: scale(1.05);
     position: absolute;
 }
