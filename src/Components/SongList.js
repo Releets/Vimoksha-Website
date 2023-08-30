@@ -1,14 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 export default function SongList(){
+    // use array for each song?
+    const [currIcons, setCurrIcon] = useState([faPlay, faPlay, faPlay, faPlay])
 
     const songs = ["Pustite Mi Mir", 
     "DILER", 
-    "Ti si Izabran",
+    "Ti Si Izabran",
     "Discommunication"];
+    //Some cases here, must change back to play if:
+    //1) song finishes playing
+    //2) Another song is played, interrupting current playing song
+    const toggleIcon = (index) => {
+        const newIcons = [faPlay, faPlay, faPlay, faPlay]
+        newIcons[index] = faPause
+        setCurrIcon(newIcons)
+    }
 
-    const playSong = (s) => {
+    const playSong = (s, i) => {
+        toggleIcon(i)
         console.log("Playing "+s)
     }
     return <div className="songlist">
@@ -17,7 +29,7 @@ export default function SongList(){
                 <li key={index} className="songlist-elem">
                     {song}
                     <div className="play-btn">
-                        <FontAwesomeIcon onClick={() => playSong(song)}cursor='pointer' size="xs" icon={faPlay}/>
+                        <FontAwesomeIcon onClick={() => playSong(song, index)} cursor='pointer' size="xs" icon={currIcons[index]}/>
                     </div>
                 </li>
             )}
