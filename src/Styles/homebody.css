@@ -32,6 +32,7 @@
 }
 
 .box{
+    z-index: 0;
     background-color: #d9e7c8;
     overflow: hidden;
     transition: all .4s ease;

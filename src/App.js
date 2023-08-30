@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 import Navbar from './Components/Navbar';
-import Blur from './Components/Blur';
 import Homebody from './Components/Homebody';
 import Banner from './Components/Banner';
 import LargeBannerImage from './Components/LargeImageBanner';
@@ -80,6 +79,5 @@ function App() {
   );
 }
 // Social media links in footer?
-// Credit to imgs etc in footer
 
 export default App;

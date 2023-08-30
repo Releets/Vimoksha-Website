@@ -1,5 +1,8 @@
 import {useEffect, useState} from 'react';
 
+import flagEng from '../Icons/flagicon-eng.png';
+import flagBos from '../Icons/flagicon-bos.png';
+
 export default function Navbar(props){
     const categories =["HOME", "ABOUT", "MUSIC", "PORTFOLIO", "CONTACT"]
     const socials = {
@@ -12,11 +15,14 @@ export default function Navbar(props){
     const offsetList = [0, 1.25, 3.5, 5.2, 6.5];
     
     const [navbarPosition, setNavbarPosition] = useState('static');
+    const [lang, setLang] = useState('eng')
 
     function handleClick(loc) {
       props.scrollFunc(loc)
     }
-
+    function handleLangChange(l){
+      setLang(l)
+    }
     // Use an effect to update the navbar position based on the scroll position
     useEffect(() => {
       function handleScroll() {
@@ -51,5 +57,10 @@ export default function Navbar(props){
                         )}
                 </div>
             </div>
+          <div className='language-choices'>
+            <img className='flagimg' src={flagEng} onClick={() => handleLangChange('eng')}></img> 
+             / 
+            <img className='flagimg' src={flagBos} onClick={() => handleLangChange('bos')}></img>
+          </div>
     </div>
 }

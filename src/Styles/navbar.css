@@ -47,6 +47,7 @@
     font-weight: bold;
     transform: scale(1);
     transition: 0.2s;
+    text-decoration: none;
 }
 .navbar-item:hover{
     padding-left: 20px;
@@ -55,6 +56,18 @@
     transition: 0.2s;
 }
 
-a{
-    text-decoration: none;
+.language-choices{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border-top: 5px solid black;
+    font-size: 120%;
+}
+.flagimg{
+    width: 18;
+    height: 18px;
+    margin: 0px 2px 0px;
+}
+.flagimg:hover{
+    cursor: pointer;
 }

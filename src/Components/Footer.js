@@ -5,6 +5,12 @@ export default function Footer(){
     const [creditState, toggleCreditState] = useState(true)
     const displayImageCredits = () => {
         toggleCreditState(!creditState)
+        if(creditState){
+            document.body.style.overflow = 'unset';
+        }else{
+            console.log("Disabling scroll!")
+            document.body.style.overflow = 'hidden';
+        }
     }
 
     return <div className="footer">

@@ -1,8 +1,8 @@
 .songlist{
-    border: 2px solid white;
     text-align: center;
     color: white;
     backdrop-filter: blur(4px);
+    padding-top: 50px;
 }
 .list-container{
     display: inline-block;
@@ -12,7 +12,8 @@
 }
 .songlist-elem{
     font-family: 'Lucida Sans Typewriter';
-    border-bottom: 4px solid white;
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
     margin-bottom: 50px;
     width: 100%;
     font-size: 2vw;
@@ -20,5 +21,5 @@
 }
 .play-btn{
     float: right;
-
+    margin-right: 20px;
 }
